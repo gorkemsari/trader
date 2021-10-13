@@ -10,3 +10,4 @@ This project aims to basically listing crypto market prices and set alarms. Also
 ![market](https://user-images.githubusercontent.com/29121464/137141432-e1f57f49-5a15-4fbc-be37-262fa6d634df.png)
 ![addalarm](https://user-images.githubusercontent.com/29121464/137141451-1ce1d3d5-e8b4-4c3b-bcde-404d2d7de036.png)
 ![alarmlist](https://user-images.githubusercontent.com/29121464/137141465-226e33b9-a534-43b7-b210-f2cad92601d4.png)
+![alarmnotif](https://user-images.githubusercontent.com/29121464/137142899-4b4e39a5-bf5f-4f6c-b580-ccece167f9f8.png)
