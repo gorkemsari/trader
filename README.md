@@ -1,16 +1,10 @@
 # trader
 
-crypto trader
+This project aims to basically listing crypto market prices and set alarms.
 
-## Getting Started
+- Binance is used for crypto market. [Detail information of binance api](https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints)
+- GetX is used for state management. [Detail information of GetX](https://github.com/jonataslaw/getx)
+- workmanager is used for periodic background services. [Detail information of workmanager](https://github.com/fluttercommunity/flutter_workmanager)
+- audio_manager is used for playing sounds during alarm. [Detail information of audio_manager](https://github.com/jeromexiong/audio_manager)
 
 This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
