@@ -5,16 +5,18 @@ import 'package:trader/app/modules/alarm/add/alarm_add_view.dart';
 import 'alarm_list_controller.dart';
 
 class AlarmListView extends GetView<AlarmListController> {
+  const AlarmListView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Alarmlar'),
+        title: const Text('Alarms'),
         actions: [
           IconButton(
             icon: const Icon(Icons.add_alarm),
             onPressed: () {
-              Get.dialog(AlarmAddView());
+              Get.dialog(const AlarmAddView());
             },
           )
         ],

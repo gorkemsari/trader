@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 import 'alarm_add_controller.dart';
 
-class AlarmAddView extends StatelessWidget {
-  final controller = Get.put(AlarmAddController());
+class AlarmAddView extends GetView<AlarmAddController> {
+  const AlarmAddView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class AlarmAddView extends StatelessWidget {
       backgroundColor: Colors.transparent,
       body: Align(
         alignment: Alignment.center,
-        child: Container(
+        child: SizedBox(
           //height: 700,
           width: 400.0,
           child: Center(
@@ -33,13 +33,13 @@ class AlarmAddView extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Alarm Ekle",
+                          "Add Alarm",
                           style: Theme.of(context).textTheme.headline6,
                         ),
                         //_closeButton(),
                         IconButton(
                           icon: const Icon(Icons.close),
-                          tooltip: 'Kapat',
+                          tooltip: 'Close',
                           onPressed: () {
                             Get.back();
                           },
@@ -114,7 +114,7 @@ class AlarmAddView extends StatelessWidget {
                         controller: controller.priceTextController.value,
                         decoration: const InputDecoration(
                           border: OutlineInputBorder(),
-                          labelText: "Fiyat",
+                          labelText: "Price",
                         ),
                       ),
                     ),
@@ -123,7 +123,7 @@ class AlarmAddView extends StatelessWidget {
                     padding: const EdgeInsets.only(
                         left: 0, right: 0, top: 8.0, bottom: 8.0),
                     child: ElevatedButton(
-                      child: const Text('Ekle'),
+                      child: const Text('Add'),
                       onPressed: () {
                         controller.addAlarm();
                       },

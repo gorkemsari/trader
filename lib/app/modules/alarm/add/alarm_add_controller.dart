@@ -29,11 +29,6 @@ class AlarmAddController extends GetxController {
     await getLastPrice(selectedCoin.value);
   }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
   Future getLastPrice(String symbol) async {
     var response = await binanceService.tickerPrice(symbol);
     priceTextController.value.text = response.price;
@@ -45,11 +40,11 @@ class AlarmAddController extends GetxController {
     alarmList ??= <String>[];
 
     var hasSymbol = false;
-    alarmList.forEach((element) {
+    for (var element in alarmList) {
       if (selectedCoin.value == element.split(' ')[0]) {
         hasSymbol = true;
       }
-    });
+    }
 
     if (!hasSymbol) {
       var item =

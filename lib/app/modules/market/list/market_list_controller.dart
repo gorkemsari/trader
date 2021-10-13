@@ -18,11 +18,6 @@ class MarketListController extends GetxController {
     await getList();
   }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
   Future getList() async {
     var usdts = <TickerPriceResponse>[];
     var coins = <String>[];
@@ -30,7 +25,7 @@ class MarketListController extends GetxController {
 
     list.sort((a, b) => a.symbol.compareTo(b.symbol));
 
-    list.forEach((item) {
+    for (var item in list) {
       var last4 = item.symbol.substring(item.symbol.length - 4);
 
       if (last4 == 'USDT') {
@@ -38,7 +33,7 @@ class MarketListController extends GetxController {
         item.symbol = item.symbol.substring(0, item.symbol.length - 4);
         usdts.add(item);
       }
-    });
+    }
 
     usdtList.value = usdts;
     preferencesHelper.setCoinList(coins);

@@ -26,8 +26,6 @@ class BaseService extends GetConnect {
     });
 
     httpClient.addResponseModifier((request, response) async {
-      print(response.body);
-
       if (response.statusCode == HttpStatus.unauthorized) {}
 
       return response;

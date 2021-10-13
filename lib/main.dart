@@ -36,7 +36,7 @@ void callbackDispatcher() {
         var alarmList = await preferencesHelper.getAlarmList();
 
         if (alarmList != null) {
-          alarmList.forEach((alarm) {
+          for (var alarm in alarmList) {
             var alarmArray = alarm.split(" ");
             var symbol = alarmArray[0];
             var rule = alarmArray[1];
@@ -64,7 +64,7 @@ void callbackDispatcher() {
                     .then((err) {});
               }
             }
-          });
+          }
         }
         break;
     }

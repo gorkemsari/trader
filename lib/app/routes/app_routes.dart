@@ -2,27 +2,24 @@ part of 'app_pages.dart';
 
 abstract class Routes {
   Routes._();
-  static const ROOT = _Paths.ROOT;
+  static const root = _Paths.root;
 
   // alarm
-  static const ALARM = _Paths.ALARM;
-  static const ALARM_ADD = _Paths.ALARM + _Paths.ALARM_ADD;
-  static const ALARM_DETAIL = _Paths.ALARM + _Paths.ALARM_DETAIL;
-  //static String BLOG_DETAIL({required String id}) => '$BLOG/$id';
+  static const alarm = _Paths.alarm;
+  static const alarmAdd = _Paths.alarm + _Paths.alarmAdd;
 
   // market
-  static const MARKET = _Paths.MARKET;
+  static const market = _Paths.market;
 }
 
 abstract class _Paths {
   // root
-  static const ROOT = '/';
+  static const root = '/';
 
   // alarm
-  static const ALARM = '/alarm';
-  static const ALARM_ADD = '/add';
-  static const ALARM_DETAIL = '/:id';
+  static const alarm = '/alarm';
+  static const alarmAdd = '/add';
 
   // market
-  static const MARKET = '/market';
+  static const market = '/market';
 }

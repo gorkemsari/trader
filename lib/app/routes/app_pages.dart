@@ -17,7 +17,7 @@ class AppPages {
 
   static final routes = [
     GetPage(
-        name: _Paths.ROOT,
+        name: _Paths.root,
         page: () => RootView(),
         binding: RootBinding(),
         preventDuplicates: true,
@@ -25,8 +25,8 @@ class AppPages {
         children: [
           GetPage(
             title: 'Alarm list',
-            name: _Paths.ALARM,
-            page: () => AlarmListView(),
+            name: _Paths.alarm,
+            page: () => const AlarmListView(),
             binding: AlarmListBinding(),
             middlewares: [
               AlarmListMiddleware(),
@@ -34,22 +34,16 @@ class AppPages {
             children: [
               GetPage(
                 title: 'Alarm add',
-                name: _Paths.ALARM_ADD,
-                page: () => AlarmAddView(),
+                name: _Paths.alarmAdd,
+                page: () => const AlarmAddView(),
                 binding: AlarmAddBinding(),
               ),
-              /*GetPage(
-                title: 'Alarm detail',
-                name: _Paths.ALARM_DETAIL,
-                page: () => AlarmDetailView(),
-                binding: AlarmDetailBinding(),
-              ),*/
             ],
           ),
           GetPage(
             title: 'Market list',
-            name: _Paths.MARKET,
-            page: () => MarketListView(),
+            name: _Paths.market,
+            page: () => const MarketListView(),
             binding: MarketListBinding(),
             middlewares: [
               MarketListMiddleware(),
