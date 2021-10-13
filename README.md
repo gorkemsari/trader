@@ -6,5 +6,3 @@ This project aims to basically listing crypto market prices and set alarms.
 - GetX is used for state management. [Detail information of GetX](https://github.com/jonataslaw/getx)
 - workmanager is used for periodic background services. [Detail information of workmanager](https://github.com/fluttercommunity/flutter_workmanager)
 - audio_manager is used for playing sounds during alarm. [Detail information of audio_manager](https://github.com/jeromexiong/audio_manager)
-
-This project is a starting point for a Flutter application.
