@@ -1,6 +1,6 @@
 # trader
 
-This project aims to basically listing crypto market prices and set alarms.
+This project aims to basically listing crypto market prices and set alarms. Also, it is starting point of Flutter with GetX state management.
 
 - Binance is used for crypto market. [Detail information of binance api](https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints)
 - GetX is used for state management. [Detail information of GetX](https://github.com/jonataslaw/getx)
