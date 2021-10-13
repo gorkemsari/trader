@@ -35,7 +35,7 @@ class AppPages {
               GetPage(
                 title: 'Alarm add',
                 name: _Paths.alarmAdd,
-                page: () => const AlarmAddView(),
+                page: () => AlarmAddView(),
                 binding: AlarmAddBinding(),
               ),
             ],

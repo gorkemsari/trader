@@ -3,8 +3,10 @@ import 'package:get/get.dart';
 
 import 'alarm_add_controller.dart';
 
-class AlarmAddView extends GetView<AlarmAddController> {
-  const AlarmAddView({Key? key}) : super(key: key);
+class AlarmAddView extends StatelessWidget {
+  AlarmAddView({Key? key}) : super(key: key);
+
+  final controller = Get.put(AlarmAddController());
 
   @override
   Widget build(BuildContext context) {

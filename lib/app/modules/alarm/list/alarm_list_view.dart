@@ -16,7 +16,7 @@ class AlarmListView extends GetView<AlarmListController> {
           IconButton(
             icon: const Icon(Icons.add_alarm),
             onPressed: () {
-              Get.dialog(const AlarmAddView());
+              Get.dialog(AlarmAddView());
             },
           )
         ],

@@ -28,7 +28,7 @@ class AlarmListController extends GetxController {
     alarmList.removeAt(index);
     await preferencesHelper.setAlarmList(alarmList);
 
-    Get.snackbar("Başarılı", 'Alarm silindi',
+    Get.snackbar("Success", 'Alarm deleted',
         icon: const Icon(
           Icons.delete,
           color: Colors.green,

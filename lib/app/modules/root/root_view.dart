@@ -29,7 +29,7 @@ class RootView extends StatelessWidget {
             items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.list),
-                label: 'Piyasa',
+                label: 'Market',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.alarm),

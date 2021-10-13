@@ -56,7 +56,7 @@ class AlarmAddController extends GetxController {
 
       Get.back();
 
-      Get.snackbar("Başarılı", 'Alarm eklendi',
+      Get.snackbar("Success", 'Alarm added',
           icon: const Icon(
             Icons.done,
             color: Colors.green,
